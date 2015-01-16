@@ -1,0 +1,34 @@
+{
+  "name": "index.php",
+  "children": [
+    {
+      "name": "wp--blog-header.php",
+      "children": [
+        {
+          "name": "wp-load.php",
+          "children": [
+            { "name": "header.php" },
+            { "name": "body.php" },
+            { "name": "footer.php" }
+          ]
+        },
+        {
+          "name": "wp-load.php",
+          "children": [
+            { "name": "header.php" },
+            { "name": "body.php" },
+            { "name": "footer.php" }
+          ]
+        },
+        {
+          "name": "wp-template-loader.php",
+          "children": [
+            { "name": "header.php" },
+            { "name": "body.php" },
+            { "name": "footer.php" }
+          ]
+        }
+      ]
+    }
+  ]
+}
