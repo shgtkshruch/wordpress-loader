@@ -11,13 +11,22 @@ children:
                 children:
                   - name: wp-includes/load
                   - name: wp-includes/default-constants
-                  - name: wp-includes/versions
+                  - name: wp-includes/version
                   - name: wp-includes/compat
+                    children:
+                      - name: wp-includes/class-json
                   - name: wp-includes/functions
+                    children:
+                      - name: wp-includes/option
                   - name: wp-includes/class-wp
                   - name: wp-includes/class-wp-error
                   - name: wp-includes/plugin
                   - name: wp-includes/pomo/mo
+                    children:
+                    - name: wp-includes/pomo/translations
+                      children:
+                        - name: wp-includes/pomo/entry
+                    - name: wp-includes/pomo/streams
                   - name: wp-includes/l10n
                   - name: wp-includes/class-wp-walker
                   - name: wp-includes/class-wp-ajax-response
@@ -63,6 +72,17 @@ children:
                   - name: wp-includes/nav-menu
                   - name: wp-includes/nav-menu-template
                   - name: wp-includes/admin-bar
+                    children:
+                      - name: wp-includes/class-wp-admin-bar
+                  - name: wp-includes/vars
+                  - name: wp-includes/pluggable
+                    children:
+                      - name: wp-includes/class-phpmailer
+                      - name: wp-includes/class-smtp
+                      - name: wp-includes/class-phpass
+                      - name: wp-includes/wp-diff
+                  - name: wp-includes/pluggable-deprecated
+                  - name: wp-includes/locale
 
           - name: wp-includes/functions
             children:

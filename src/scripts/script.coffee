@@ -1,6 +1,6 @@
 margin = [20, 50, 20, 50]
-width = 1600
-height = 1550
+width = 1800
+height = 1850
 
 svg = d3.select 'body'
   .append 'svg:svg'
