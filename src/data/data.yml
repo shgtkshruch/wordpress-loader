@@ -1,0 +1,72 @@
+---
+name: index
+children:
+  - name: wp-blog-header
+    children:
+      - name: wp-load
+        children:
+          - name: wp-config
+            children:
+              - name: wp-settings
+                children:
+                  - name: wp-includes/load
+                  - name: wp-includes/default-constants
+                  - name: wp-includes/versions
+                  - name: wp-includes/compat
+                  - name: wp-includes/functions
+                  - name: wp-includes/class-wp
+                  - name: wp-includes/class-wp-error
+                  - name: wp-includes/plugin
+                  - name: wp-includes/pomo/mo
+                  - name: wp-includes/l10n
+                  - name: wp-includes/class-wp-walker
+                  - name: wp-includes/class-wp-ajax-response
+                  - name: wp-includes/formatting
+                  - name: wp-includes/capabilities
+                  - name: wp-includes/query
+                  - name: wp-includes/date
+                  - name: wp-includes/theme
+                  - name: wp-includes/class-wp-theme
+                  - name: wp-includes/template
+                  - name: wp-includes/user
+                  - name: wp-includes/session
+                  - name: wp-includes/meta
+                  - name: wp-includes/general-template
+                  - name: wp-includes/link-template
+                  - name: wp-includes/author-template
+                  - name: wp-includes/post
+                  - name: wp-includes/post-template
+                  - name: wp-includes/revision
+                  - name: wp-includes/post-formats
+                  - name: wp-includes/post-thumbnail-template
+                  - name: wp-includes/category
+                  - name: wp-includes/category-template
+                  - name: wp-includes/comment
+                  - name: wp-includes/comment-template
+                  - name: wp-includes/rewrite
+                  - name: wp-includes/feed
+                  - name: wp-includes/bookmark
+                  - name: wp-includes/bookmark-template
+                  - name: wp-includes/kses
+                  - name: wp-includes/cron
+                  - name: wp-includes/deprecated
+                  - name: wp-includes/script-loader
+                  - name: wp-includes/taxonomy
+                  - name: wp-includes/update
+                  - name: wp-includes/canonical
+                  - name: wp-includes/shortcodes
+                  - name: wp-includes/class-wp-embed
+                  - name: wp-includes/media
+                  - name: wp-includes/http
+                  - name: wp-includes/class-http
+                  - name: wp-includes/widgets
+                  - name: wp-includes/nav-menu
+                  - name: wp-includes/nav-menu-template
+                  - name: wp-includes/admin-bar
+
+          - name: wp-includes/functions
+            children:
+              - name: wp-includes/option
+          - name: wp-includes/version
+      - name: template-loader
+

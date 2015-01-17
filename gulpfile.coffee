@@ -1,5 +1,7 @@
 'use strict'
 
+fs = require 'fs'
+yaml = require 'js-yaml'
 gulp = require 'gulp'
 $ = require('gulp-load-plugins')()
 browserSync = require 'browser-sync'
@@ -59,9 +61,14 @@ gulp.task 'coffee', ->
     .pipe browserSync.reload
       stream: true
 
+gulp.task 'yaml', ->
+  doc = yaml.safeLoad fs.readFileSync config.src + '/data/data.yml', 'utf8'
+  fs.writeFileSync config.dest + '/scripts/data.json', JSON.stringify doc
+
 gulp.task 'default', ['build', 'browser-sync'], ->
   gulp.watch config.src + '/index.jade', ['jade']
   gulp.watch config.src + '/styles/*.scss', ['sass']
   gulp.watch config.src + '/scripts/*.coffee', ['coffee']
+  gulp.watch config.src + '/data/*.yml', ['yaml']
 
 gulp.task 'build', ['html', 'sass', 'coffee']
