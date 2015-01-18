@@ -1,6 +1,6 @@
 margin = [20, 50, 20, 50]
-width = 1800
-height = 1850
+width = 2700
+height = 3000
 
 svg = d3.select 'body'
   .append 'svg:svg'
@@ -16,7 +16,7 @@ d3.json 'scripts/data.json', (data) ->
   nodes = tree.nodes data
   links = tree.links nodes
 
-  nodes.forEach (d) -> d.y = d.depth * 250
+  nodes.forEach (d) -> d.y = d.depth * 200
 
   diagonal = d3.svg.diagonal()
     .projection (d) -> return [d.y, d.x]
@@ -40,6 +40,6 @@ d3.json 'scripts/data.json', (data) ->
 
   node.append 'text'
     .text (d) -> return d.name
-    .attr 'x', -4
+    .attr 'x', -5
     .attr 'y', -8
 
