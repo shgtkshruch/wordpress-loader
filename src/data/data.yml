@@ -27,6 +27,8 @@ children:
                       children:
                         - name: pomo/entry
                     - name: pomo/streams
+                  - name: wp-db
+                  - name: default-filters
                   - name: l10n
                   - name: class-wp-walker
                   - name: class-wp-ajax-response
